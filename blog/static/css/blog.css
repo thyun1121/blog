@@ -1,16 +1,18 @@
 h1 a {
     color: #FCA205;
     font-family: 'Lobster';
+    padding-left: 40px;
 }
 
 body {
         padding-left: 15px;
+        transition: background-color .5s;
     }
 
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 0px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -23,12 +25,17 @@ body {
     margin-left: 40px;
 }
 
+.col-md-8{
+    width : 100%;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
 .date {
     color: #828282;
+    padding-left:40px;
 }
 
 .save {
@@ -46,10 +53,127 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
+.menu-hamburger, .menu-hamburger:hover, .menu-hamburger:visited {
+    color: #ffffff;
+    float: left;
+    font-size: 26pt;
+    margin-top:30px;
+}
+
 .post {
     margin-bottom: 70px;
 }
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+}
+
+.post p {
+    padding-left: 40px;
+}
+
+
+/*menu slide */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #ff9400;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidenav img{
+    border-radius: 140px;
+    -moz-border-radius: 140px;
+    -khtml-border-radius: 140px;
+    -webkit-border-radius: 140px;
+    width: 125px;
+    height : 125px;
+}
+
+.sidenav p{
+    text-align : center;
+    margin-top : 15%;
+}
+
+.sidenav .menuList a{
+    margin-top : 20%;
+}
+
+/*profile page*/
+.profile_img {
+    width : 45%;
+    float : left;
+}
+.profile_img img{
+    width : 85%;
+    height : 246px;
+}
+
+.profile_content {
+    width : 55%;
+    float : right;
+    height : 260px;
+}
+
+.profile_content h2, .profile_content h4, .profile_content h5, .profile_content p, .profile_career h3, .profile_career p{
+    font-family: 'Jeju Gothic';
+}
+
+.profile_content p{
+    line-height: 1.5em;
+}
+
+.profile_content tr{
+    height : 35px;
+}
+
+.profile_content .table_left {
+    text-align : right;
+    padding-right : 15;
+    color : #a8aaad; 
+}
+
+.profile_career {
+    width : 55%;
+    float : left;
+}
+
+.profile_career tr{
+    height : 35px;
+}
+
+.profile_career .table_left {
+    padding-right : 15;
+    text-align : right;
 }

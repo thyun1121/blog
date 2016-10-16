@@ -1,0 +1,47 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+     <div class="profile_img">
+  	<p><img src="{% static 'image/profile_image.jpg' %}"></img></p>
+     </div>
+     <div class="profile_content">
+	<h2>안태현</h2>
+	<h5>&nbsp; 프로그래머<h5>
+	<p>
+	    <table>
+		<tr>
+		    <td class="table_left"> 생년월일</td>
+		    <td>1987년 11월 21일</td>
+		</tr>
+		<tr>
+ 		    <td class="table_left">거주지</td>
+                    <td>대한민국, 서울/오송</td>
+		</tr>
+		<tr>
+ 		    <td class="table_left">소속회사</td>
+                    <td>대우정보시스템</td>
+		</tr>
+		<tr>
+	    	    <td class="table_left">취미</td>
+                    <td>복싱, 축구, 농구, 사진, 사격</td>
+		</tr>
+	    </table>
+	</p>
+    </div>
+    <div class="profile_career">
+	<h3>학력사항</h3>
+	    <p>
+		<table >
+		    <tr>
+		        <td class="table_left">2003.03 ~ 2006.02</td>
+		        <td>경기고등학교</td>
+		    </tr>
+		    <tr>
+		        <td class="table_left">2007.03 ~ 2014.02</td>
+		        <td>숭실대학교 <br/>-  정보통신전자공학</td>
+		    </tr>
+	        </table>
+            </p>
+	<h3>경력</h3>
+    </div>
+{% endblock %}
