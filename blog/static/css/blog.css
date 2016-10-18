@@ -174,6 +174,15 @@ h1, h2, h3, h4 {
 }
 
 .profile_career .table_left {
-    padding-right : 15;
-    text-align : right;
+    padding-left : 20;
+    text-align : left;
+}
+
+
+.careers .complementary {
+    margin-top : 10px;
+    margin-left : 10px;
+    font-size : 13px;
+    color : #a8aaad;
+    line-height : 1.5em;
 }
