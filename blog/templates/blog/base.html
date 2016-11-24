@@ -16,8 +16,8 @@
 		<div class="page-header">
 			{% if user.is_authenticated %}
 			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                	{% endif %}
-			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+			<a href="{% url 'post_new_markdown' %}" class="top-menu-markdown"><span class="glyphicon glyphicon-plus"></span></a>
+			{% endif %}
 		 	<span class="glyphicon glyphicon-menu-hamburger menu-hamburger" style="cursor:pointer" onclick="openNav()"></span>
 			<h1><a href="/">thyun.Ahn's blog</a></h1>
             	</div>

@@ -53,6 +53,14 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
+.top-menu-markdown, .top-menu-markdown:hover, .top-menu-markdown:visited {
+    color: #bcb7b7;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+
 .menu-hamburger, .menu-hamburger:hover, .menu-hamburger:visited {
     color: #ffffff;
     float: left;
@@ -85,6 +93,7 @@ h1, h2, h3, h4 {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    border: 3px solid #FF9400;
 }
 
 .sidenav a {
@@ -148,6 +157,7 @@ h1, h2, h3, h4 {
 
 .profile_content h2, .profile_content h4, .profile_content h5, .profile_content p, .profile_career h3, .profile_career p{
     font-family: 'Jeju Gothic';
+    margin-top : 10px;
 }
 
 .profile_content p{
@@ -165,7 +175,7 @@ h1, h2, h3, h4 {
 }
 
 .profile_career {
-    width : 55%;
+    width : 45%;
     float : left;
 }
 
@@ -185,4 +195,20 @@ h1, h2, h3, h4 {
     font-size : 13px;
     color : #a8aaad;
     line-height : 1.5em;
+}
+
+.skills td {
+    padding-left : 20;
+    text-align : left;
+}
+
+.tagCloud {
+    width : 55%;
+    float : right;
+}
+
+.tagCloud img{
+   margin-top : 60px;
+    width : 95%;
+    height : 320px;
 }
