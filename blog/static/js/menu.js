@@ -12,7 +12,7 @@ function closeNav(){
 
 $(document).ready( function() {
 
-    $(".h1test").click( function(event) {
-        alert("You clicked the button using JQuery!");
+    $(".scrapy").click( function(event) {
+     //   alert("You clicked the button using JQuery!");
     });
 });
