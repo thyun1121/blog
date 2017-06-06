@@ -99,7 +99,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-STATIC_URL = '/root/tedProject/blog/static/'
+STATIC_URL = '/static/'
 #STATIC_URL = '/statics/'
-#STATIC_ROOT = os.path.join(BASE_DIR, 'statics')
-#print(STATIC_ROOT)
+STATIC_ROOT ='/root/static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, '/blog/static/')
+print('ath')
+print(STATIC_ROOT)

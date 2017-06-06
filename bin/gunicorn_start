@@ -1,0 +1,26 @@
+#!/bin/bash
+
+NAME="tedProject_app"
+DJANGODIR=/root/tedProject
+SOCKFILE=/root/tedProject/run/gunicorn.sock
+USER=root
+NUM_WORKERS=3
+DJANGO_SETTINGS_MODULE=tedProject.settings
+DJANGO_WSGI_MODULE=tedProject.wsgi
+
+echo "Starting $NAME as 'whoami'"
+
+export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
+export PYTHONPATH=$DJANGODIR:$PYTHONPATH
+
+RUNDIR=$(dirname $SOCKFILE)
+echo "$RUNDIR"
+test -d $RUNDIR || mkdir -p $RUNDIR
+
+exec /usr/local/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
+ --name $NAME \
+ --workers $NUM_WORKERS \
+ --user=$USER \
+ --bind=unix:$SOCKFILE \
+ --log-level=debug \
+ --log-file=-
